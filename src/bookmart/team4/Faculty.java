@@ -1,5 +1,5 @@
 // This will be a subclass of BookMarkMembership Abstract class
-
+package bookmart.team4;
 
 public class Faculty extends BookmarkMembership
 {
@@ -22,9 +22,11 @@ public class Faculty extends BookmarkMembership
     
     if(amountDaysBorrowed > 14)
     {
-      throw new IllegalArgumentException("The amount of free days to borrow this book
-      can not exceed 14 day.");
+      throw new IllegalArgumentException("The amount of free days to borrow this book"
+      + " can not exceed 14 day.");
     }
+    
+    return amountDaysBorrowed;
   }
   
   @Override
@@ -36,12 +38,15 @@ public class Faculty extends BookmarkMembership
     {
       throw new IllegalArgumentException("You can only borrow 4 free book at a time.");
     }
+    
+    return facultyFreeBooks;
   }
   
   @Override
   public float fee()
   {
       facultyBalance = facutlyBalance + facutlyFee; // Adds the monthly fee to the Faculty member balance
+      return facultyBalance;
   }
 
 } // End Facutly subclass
