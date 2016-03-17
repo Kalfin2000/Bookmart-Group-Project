@@ -9,45 +9,99 @@ package bookmart.team4;
  *
  * @author Steven Benedict <sbenedict1@islander.tamucc.edu>
  */
-public class BookmarkMembership {
-    private string christian;
-            
-    private String anus;
-}
+//public class BookmarkMembership {
+//    private string christian;
+//}
 
-public Abstract class BookmarkMembership
+public abstract class BookmarkMembership
 {
 
-  String firstName;  // Holds first name of user
-  String lastName;  // Holds last name of user
-  String middleInitial;  // Holds middle initial
-  String password;  // Holds password string
-  String email;  // Holds email string
+  private String firstName;  // Holds first name of user
+  private String lastName;  // Holds last name of user
+  private String middleInitial;  // Holds middle initial
+  private String password;  // Holds password string
+  private String email;  // Holds email string
   
-  abstract void setFirstName(String fName)
+  
+  //Constructor
+  public BookmarkMembership(String firstName, String lastName, String middleInitial, String password, String email)
   {
-      // Will later be used by children classes to set first name.
+      this.firstName = firstName; // Initializes firstName
+      this.lastName = lastName; // Initializes lastName
+      this.middleInitial = middleInitial; // Initializes middleInitial
+      this.password = password; // Initilizes password
+      this.email = email; // Initilizes email
+  }
+  // Sets First Name
+  public void setFirstName(String firstName)
+  {
+      this.firstName = firstName;
+  }
+  // Return First Name
+  public String getFirtsName()
+  {
+      return firstName;
+  }
+  // Sets Last Name
+  public void setLastName(String lastName)
+  {
+      this.lastName = lastName;
+  }
+  // Returns Last Name
+  public String getLastName()
+  {
+      return lastName;
   }
   
-  abstract void setLastName(String lName)
+  // Sets Middle Initial
+  public void setMiddleInitial(String middleInitial)
   {
-      // Will laster be used by children classes to set last name.
+      this.middleInitial = middleInitial;
   }
   
-  abstract void setMiddleInitial(String mName)
+  // Return Middle Initial
+  public String getMiddleInitial()
   {
-      // Will later be used by children classes to set middle initial.
+      return middleInitial;
   }
   
-  abstract void setPass(String pass)
+  // Gets Password
+  public void setPass(String password)
   {
-      // Will later be used by children classes to set password.
+      this.password = password;
   }
   
-  abstract void setEmail(String mail)
+  // Returns Password
+  public String getPassword()
   {
-      // Will later be used by children classes to set email.
+      return password;
   }
   
+  //Sets Email
+  public void setEmail(String email)
+  {
+      this.email = email;
+  }
   
+  // Return Email
+  public String getEmail()
+  {
+      return email;
+  }
+  
+  public abstract int daysBorrowed();
+  //Abstract method that will later be used to count the days a user can borrow a book
+  // When used by Student, there will only be 7 days to borrow book
+  // When used by Faculty, there will be 14 days to borrow a book
+  
+  public abstract double fee();
+  // Abstract method that will calculate the monthly fee for the user
+  // When used by Student, the fee will be $7.99/month
+  // When used by Faculty, the fee will be $9.99/month
+  
+  public abstract int freeBooks();
+  // Abstract method that will display the amount of free books to borrow demepending on a user
+  // When used by Student, the amount of free books = 1
+  // When used by Faculty, the amount of free books = 4
+
 }
