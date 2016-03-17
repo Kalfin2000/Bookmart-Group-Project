@@ -1,5 +1,5 @@
 // This will be the subclass of BookMarkMembership Abstract class
-package mookmart.team4;
+package bookmart.team4;
 
 public class Student extends BookmarkMembership
 {
