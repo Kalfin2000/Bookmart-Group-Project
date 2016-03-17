@@ -10,7 +10,7 @@ package bookmart.team4;
  * @author Steven Benedict <sbenedict1@islander.tamucc.edu>
  */
 public class BookmarkMembership {
-    private string christian;
+    private String christian;
             
     private String anus;
 }
