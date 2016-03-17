@@ -3,10 +3,10 @@
 
 public class Student extends BookmarkMembership
 {
-  private final float studentFee = 9.99; // Used to calculate the monthly fee
+  private final double studentFee = 9.99; // Used to calculate the monthly fee
   private final int studentFreeBooks = 0;  // Used to keep track of the amount of free books allowed
   private int amountDaysBorrowed = 0; // Used to keep track of the amount of free days you get
-  private float studentBalance = 0.00 // Used to keep track of the balance for the student
+  private double studentBalance = 0.00 // Used to keep track of the balance for the student
 
 
   // Constructor
@@ -22,9 +22,11 @@ public class Student extends BookmarkMembership
     
     if(amountDaysBorrowed > 7)
     {
-      throw new IllegalArgumentException("The amount of free days to borrow this book
-      can not exceed 7 day.");
+      throw new IllegalArgumentException("The amount of free days to borrow this book"
+      + " can not exceed 7 day.");
     }
+    
+    return amountDaysBorrowed;
   }
   
   @Override
@@ -36,12 +38,16 @@ public class Student extends BookmarkMembership
     {
       throw new IllegalArgumentException("You can only borrow 1 free book at a time.");
     }
+    
+    return studentFreeBook;
   }
   
   @Override
-  public float fee()
+  public double fee()
   {
       studentBalance = studentBalance + studentFee; // Adds the monthly fee to the student balance
+      
+      return studentBalance;
   }
 
 } // End Student subclass
