@@ -3,10 +3,10 @@ package bookmart.team4;
 
 public class Faculty extends BookmarkMembership
 {
-  private final float facultyFee = 7.99; // Used to calculate the monthly fee
+  private final double facultyFee = 7.99; // Used to calculate the monthly fee
   private final int facultyFreeBooks = 0;  // Used to keep track of the amount of free books allowed
   private int amountDaysBorrowed = 0; // Used to keep track of the amount of free days you get
-  private float facultyBalance = 0.00 // Used to keep track of the balance for the facutly member
+  private double facultyBalance = 0.00 // Used to keep track of the balance for the facutly member
 
 
   // Constructor
@@ -43,7 +43,7 @@ public class Faculty extends BookmarkMembership
   }
   
   @Override
-  public float fee()
+  public double fee()
   {
       facultyBalance = facutlyBalance + facutlyFee; // Adds the monthly fee to the Faculty member balance
       return facultyBalance;
