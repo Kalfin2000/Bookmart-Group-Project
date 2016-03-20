@@ -1,5 +1,5 @@
 Name:    	Christian
-Project #1: 	Book
+Project #1: 	BookMart
 Class:   	COSC 3324-001
 Date Submitted: 3/20/2016
 Instructor: 	Ismail Hadimlioglu

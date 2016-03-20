@@ -70,7 +70,6 @@ public class Default
                 String gamePublisher = token[5];
                 
                 game[gameNum] = new Game(Integer.parseInt(gameID), gameName, Integer.parseInt(gameQuantity), gameCat, gameReleaseDate, gamePublisher);    
-                //game[gameNum].gameInfo();
                 gameNum++; 
             }
         }
@@ -111,7 +110,7 @@ public class Default
         {
         System.out.println("-----------------------------------------------------------------------------------------------------------");
         // Login Menu
-        System.out.printf("***   GamesTop   ***\n"
+        System.out.printf("***    Welcome to the BookMart Rentail System     ***\n"
                             + "Please select one of the following option: \n"
                             + "1. Login \n"
                             + "2. Signup \n"
@@ -129,7 +128,7 @@ public class Default
                     boolean found = false;
                     boolean isAdmin = false;
 
-                    System.out.printf("***   GamesTop Login   ***\n"
+                    System.out.printf("***    BookMart Login   ***\n"
                                 + "ID: ");
                     id = input1.next(); //gathers input for user ID
                     System.out.printf("Password: ");
@@ -192,7 +191,7 @@ public class Default
                     boolean found = false,
                             match = false;
                            /*here is where the user can sign up to get a login for the program*/
-                    System.out.printf("***   GamesTop Signup   ***\n"
+                    System.out.printf("*** 2Mart Signup   ***\n"
                                 + "ID: ");
                     id = input2.next(); // gathers user input for ID
                     System.out.printf("Password: ");
@@ -266,16 +265,16 @@ public class Default
             System.out.println("-----------------------------------------------------------------------------------------------------------");
             System.out.printf("***   User Menu   ***\n"
                                 + "Please select one of the following option: \n"
-                                + "1. Browse game library \n"
-                                + "2. Buy Subcription \n"
-                                + "3. Cancel Subcription \n"
-                                + "4. Rent a game (Only for paid account)\n"
-                                + "5. Return a game (Only for paid account)\n"
+                                + "1. Browse book library \n"
+                                + "2. Enroll to become a studuent or facuilty \n"
+                                + "3. Cancel enrollement \n"
+                                + "4. Rent a book (Only for enrolled account)\n"
+                                + "5. Return a book (Only for enrolled account)\n"
                                 + "6. Update account info \n"
-                                + "7. Search Game by Name \n"
-                                + "8. Sort Game by Category \n"
-                                + "9. Sort Game by Release Date \n"
-                                + "10. See Rent Game List \n"
+                                + "7. Search Book by Name \n"
+                                + "8. Sort Book by Category \n"
+                                + "9. Sort Book by Release Date \n"
+                                + "10. See Rental Book history \n"
                                 + "11. Exit \n"
                                 + "Your choice: ");
             choice = input.nextInt();
@@ -286,11 +285,12 @@ public class Default
             {
                 case 1:
                 {
-                    /*this is the game database which is a for loop
-                    which outputs the games stored in the database to the user*/
+                   
+                    /*this is the book database which is a for loop
+                    which outputs the books stored in the database to the user*/
                     System.out.println("-----------------------------------------------------------------------------------------------------------");
-                    System.out.println("***   Game Database   ***");
-                    System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "GameID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
+                    System.out.println("***   Book Database   ***");
+                    System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "BookID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
                     /*for loop that outputs each game to the screen*/
                     for (int i = 0; i<gameNum; i++)
                     {
@@ -313,9 +313,9 @@ public class Default
                 }
                 case 4:
                 {
-                    /*function call for user to rent a game, 
-                    passes in game object as well as gameNum which
-                    is the total number of games*/
+                    /*function call for user to rent a book, 
+                    passes in bok object as well as bookNum which
+                    is the total number of books*/
                     member.rentGame(game, gameNum);
                     
                     break;
@@ -335,8 +335,8 @@ public class Default
                 }
                 case 7:
                 { 
-                    /*Minh having trouble passing in the variables to the search function*/
-                    /*Search Game Name*/
+                  /* having trouble passing in the variables to the search function*/
+                    /*Search Book Name*/
                     //game[].searchGameName(game, gameNum);
                     
                     Scanner input1 = new Scanner(System.in);
@@ -348,8 +348,8 @@ public class Default
                         int pos = 0;
                         boolean found = false;
                            
-                        System.out.printf("***   Game Search by Name   ***\n"
-                                + "What is the name of the game are you looking for? ");
+                        System.out.printf("***   Book Search by Name   ***\n"
+                                + "What is the name of the book are you looking for? ");
                         String gameNameSearch = input1.nextLine();
 
                         System.out.printf("Now searching for %s \n" , gameNameSearch);
@@ -366,16 +366,16 @@ public class Default
                         
                         if(!found)
                             {
-                                System.out.println("Sorry that game does not exist!");
+                                System.out.println("Sorry that book does not exist!");
                             }
                         else
                         {
-                            System.out.println("Here is your game info ..." +
-                                    " | Game Name: " +game[pos].getGameName() +
-                                    " | Game ID: " + game[pos].getGameID() +
-                                    " | Game Release Date: " + game[pos].getGameReleaseDate());
+                            System.out.println("Here is your book info ..." +
+                                    " | BOok Name: " +game[pos].getGameName() +
+                                    " | BOok ID: " + game[pos].getGameID() +
+                                    " | Book Release Date: " + game[pos].getGameReleaseDate());
                         }
-                        System.out.printf("Would you like to search for another game? yes = 1 no = 2 \n"
+                        System.out.printf("Would you like to search for another BOok? yes = 1 no = 2 \n"
                                 + "Your choice: ");
                         choice1 = input.nextInt();
                     } while (choice1 == 1 );
@@ -384,7 +384,7 @@ public class Default
                 }
                 case 8:
                 {
-                    /*this method will sort the database by game category*/
+                    /*this method will sort the database by Book category*/
                     Scanner input1 = new Scanner(System.in);
                     Scanner input2 = new Scanner(System.in);
                     int choice1 = 0;
@@ -392,14 +392,14 @@ public class Default
                     do
                     {
                         System.out.println("-----------------------------------------------------------------------------------------------------------");
-                       //outputs the game library that is stored in the program
-                        System.out.printf("***   Sort Game by Category  ***\n"
-                                     + "Please enter a category (Action/Adventure/Strategy/RPG/Indie/MMO/Casual/Simulation/Racing&Sports): ");
+                       //outputs the BOok library that is stored in the program
+                        System.out.printf("***   Sort Book by Category  ***\n"
+                                     + "Please enter a category (Art, Business, Economics, Computer Science, Design, Education, Law, Mathematics, Music, Philosophy and Psychology.): ");
                         String cat = input1.nextLine();
-                        System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "GameID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
+                        System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "BookID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
                         for (int i = 0; i < gameNum; i++)
                         {
-                            /*for loop which will process the array of games in 
+                            /*for loop which will process the array of books in 
                             the database*/
                             String buffCat = game[i].getGameCategory();
 
@@ -407,16 +407,16 @@ public class Default
                             {
                                 /*while in the for loop if the category
                                 inputted matches the one in the program
-                                the game info will output to the
+                                the book info will output to the
                                 screen*/
                                 game[i].gameInfo();
                                 
                             }
                         }
-                         /*user promts to sort the game again 
+                         /*user promts to sort the book again 
                         which is also a do-while loop which will continue 
                         unless the user chooses no*/
-                        System.out.printf("Would you like to sort game in another year? yes = 1 no = 2 \n"
+                        System.out.printf("Would you like to sort books in another year? yes = 1 no = 2 \n"
                                 + "Your choice: ");
                         choice1 = input2.nextInt();
                         
@@ -433,11 +433,11 @@ public class Default
                     do /*this do while loop allows the user to sort by year*/
                     {
                         System.out.println("-----------------------------------------------------------------------------------------------------------");
-                      //outputs list of games sorted by year
-                        System.out.printf("***   Sort Game by Year   ***\n"
+                      //outputs list of books sorted by year
+                        System.out.printf("***   Sort Books by Year   ***\n"
                                      + "Sort by Year (2003 - 2015): ");
                         int searchDate = input1.nextInt();
-                        System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "GameID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
+                        System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "BookID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
                         for (int i = 0; i < gameNum; i++)
                         {
                             /*for loop that traverses through array and uses a 
@@ -456,7 +456,7 @@ public class Default
                             }
                         }
                          
-                        System.out.printf("Would you like to sort game in another year? yes = 1 no = 2 \n"
+                        System.out.printf("Would you like to sort Books in another year? yes = 1 no = 2 \n"
                                 + "Your choice: ");
                         choice1 = input2.nextInt();
                         /*do while loop will continue to loop untill user chooses not to 
@@ -466,7 +466,7 @@ public class Default
                 }
                 case 10:
                 {
-                    /*this is teh function call to see the game rent detail information*/
+                    /*this is teh function call to see the book rent detail information*/
                     System.out.println("-----------------------------------------------------------------------------------------------------------");
                     member.seeGameRentDetail();
                     break;
@@ -490,8 +490,8 @@ public class Default
         } while (choice != 11); //do while loop if...will loop untill option 11 is selected    
     }
  /*this is the admin menu 
-    in this menu the admin, game and member objects are passed 
-    along with the total number of games and the total number of members*/
+    in this menu the admin, book and member objects are passed 
+    along with the total number of books and the total number of members*/
     private static void showAdminMenu(Admin admin, Game[] game, int gameNum, Member[] member, int memberMax) {
         Scanner input = new Scanner(System.in);
         int choice;
@@ -506,8 +506,8 @@ public class Default
                                 + "1. See Member List \n"
                                 + "2. Search Member Info by Attribute\n"
                                 + "3. See Member History\n"
-                                + "4. See Game List\n"
-                                + "5. Update Game Availability\n"
+                                + "4. See Book List\n"
+                                + "5. Update Book Availability\n"
                                 + "6. Exit \n"
                                 + "Your choice: ");
             choice = input.nextInt(); // gets user input for choice
@@ -614,19 +614,19 @@ public class Default
                     /*this option will call the
                     seeMemberHist method which
                     will show the members history
-                    of when they rented a game*/
+                    of when they rented a book*/
                     System.out.println("-----------------------------------------------------------------------------------------------------------");
                     admin.seeMemberHist(member, memberMax);
                     break;
                 }
                 case 4:
                 {
-                    /*this is the game database which is a for loop
-                    which outputs the games stored in the database to the user*/
+                    /*this is the book database which is a for loop
+                    which outputs the books stored in the database to the user*/
                     System.out.println("-----------------------------------------------------------------------------------------------------------");
-                    System.out.println("***   Game Database   ***");
-                    System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "GameID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
-                    /*for loop that outputs each game to the screen*/
+                    System.out.println("***   Book Database   ***");
+                    System.out.printf("%-10s %-30s %-10s %-20s %-15s %-30s\n", "BookID" , "Name", "Quantity", "Category", "Release Date", "Publisher");
+                    /*for loop that outputs each book to the screen*/
                     for (int i = 0; i<gameNum; i++)
                     {
                         game[i].gameInfo();
@@ -664,11 +664,3 @@ public class Default
 
     
 }
-/*
-
-
-
-
-
-
-*/

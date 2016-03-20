@@ -14,10 +14,10 @@ import java.util.Scanner;
 
 /**
  *
- * @author Minh Nguyen
+ * @author Strongestislander
  */
 /*This is the member class which is a child of User and 
-a parent class of gamer and premium */
+a parent class of gamer(student) and premium(faculty) */
 public class Member extends User {
     /*in this class the private variables for the 
     users information when signing up for an account
@@ -309,8 +309,8 @@ public class Member extends User {
             System.out.println("-----------------------------------------------------------------------------------------------------------");
             System.out.printf("***   Account Subcription   ***\n"
                         + "Please select the subcription type that you would like to purchase: \n"
-                        + "1. Gamer ($7.99/month)\n"
-                        + "2. Premium ($10/month)\n"
+                        + "1. Student ($7.99/month)\n"
+                        + "2. Facuilty ($9.99/month)\n"
                         + "3. Exit\n"
                         + "Your choice: ");
             choice = input.nextInt(); // gathers input from the user on their selection
@@ -367,10 +367,9 @@ public class Member extends User {
                 case 1:
                 {
                     /*this option is if the user chooses to 
-                    subscribe to the gamer subscritption 
-                    it will set their subscription type to gamer using the
+                    subscribe to the gamer(student) subscritption 
+                    it will set their subscription type to gamer(student) using the
                      enum value*/
-                    //member = new Gamer(super.getId(), super.getPassword(), super.getUserID(), subType.GAMER, firstName, lastName, midInitial, email, paypalID, paypalPassword);
                     setSubcriptionType(subType.GAMER);
                     System.out.printf("Subcribe Successfully to " + getSubcriptionType() + " Account! \n");
                     break;
@@ -378,10 +377,9 @@ public class Member extends User {
                 case 2:
                 {
                     /*this option is if the user chooses to 
-                    subscribe to the premium subscritption 
-                    it will set their subscription type to premium using the
+                    subscribe to the premium(faculty) subscritption 
+                    it will set their subscription type to premium(faculty) using the
                      enum value*/
-                    //member = new Premium(super.getId(), super.getPassword(), super.getUserID(), subType.PREMIUM, firstName, lastName, midInitial, email, paypalID, paypalPassword);
                     setSubcriptionType(subType.PREMIUM);
                     System.out.printf("Subcribe Successfully to " + getSubcriptionType() + " Account! \n");
                     break;
@@ -408,14 +406,13 @@ public class Member extends User {
     
     public void rentGame(Game[] game, int gameMax) 
     {
-        /*this is the rent game method which passes in the game object and the
-        gameMax variable */
+        /*this is the rent book method which passes in the book object and the
+        bookMax variable */
         Scanner input = new Scanner(System.in);
         Scanner input1 = new Scanner(System.in);
         int choice = 0;
         boolean found = false;
         int gameRentMax = 2;
-        //System.out.printf("rent: " + gamerRentMax);
         /*checks if the user has a subscripiton*/
         if (getSubcriptionType() == subType.NONE)
         {
@@ -427,14 +424,14 @@ public class Member extends User {
             {
    
                 System.out.println("-----------------------------------------------------------------------------------------------------------");
-                System.out.printf("***   Rent Game Menu   ***\n"
-                                + "Please insert the game ID you want to rent: ");
-                /*user enters game ID of the game of their choice*/
+                System.out.printf("***   Rent Book Menu   ***\n"
+                                + "Please insert the Book ID you want to rent: ");
+                /*user enters Book ID of the book of their choice*/
                 int gid = input1.nextInt();
                 int pos = 0;
                 for(int i=0; i<gameMax; i++)
                 {
-                    /*id is passed through for loop which browses the game database
+                    /*id is passed through for loop which browses the book database
                     and checks which id is the same*/
                     if (gid == game[i].getGameID())
                     {
@@ -445,27 +442,27 @@ public class Member extends User {
                         break;
                     }
                 }
-                 /*checks if the user is renting the appropriate amount of games for their 
+                 /*checks if the user is renting the appropriate amount of books for their 
                 subscription*/
                 if ((getGameRent() >= 2) && (getSubcriptionType() == subType.GAMER))
                 {
                     /*error message*/
-                    System.out.println("Warning: Maximum games for Gamer account monthly rent reach. Please upgrade your subcription type or return games to rent more game!");
+                    System.out.println("Warning: Maximum Books for student account is 1 monthly. Please upgrade your subcription type or return your book to rent Another!\"");
                 }
                 /*checks if the user is renting the appropriate amount of games for the 
-                premium subscription*/
+                premium(faculty) subscription*/
                 else if ((getGameRent() >= 4) && (getSubcriptionType() == subType.PREMIUM))
                 {
                     /*error message*/
-                    System.out.println("Warning: Maximum games for Premium account monthly rent reach. Please return games to rent more!");
+                    System.out.println("Warning: Maximum Books for Faculty account is 4 monthly. Please return a book to rent another!");
                 }
                 else if(!found) 
                 {
-                    System.out.println("Sorry that game does not exist! ");
+                    System.out.println("Sorry that Book does not exist! ");
                 }
                 else
                 {
-                    /*if appropriate number of games are being rented then the date 
+                    /*if appropriate number of books are being rented then the date 
                     is recorded*/
                     if (getSubcriptionType() == subType.GAMER)
                         gameRentMax = 2;
@@ -482,23 +479,23 @@ public class Member extends User {
                     
                     
                     
-                    /*this subtracts the number of games from the database*/
+                    /*this subtracts the number of books from the database*/
                     if ((game[pos].getGameQuantity() - 1) <= 0)
-                        System.out.println("Sorry this game has no copy left! Please check later for availability");
+                        System.out.println("Sorry this book has no copy left! Please check later for availability");
                     else
-                    {    /*when a game is rented the number of games that are being rented are being kept count of 
-                        using the gameRent variable: the game information as well as the return date is 
-                        outputted to the user as well as how the quantity of that game is subtracted*/
+                    {    /*when a book is rented the number of books that are being rented are being kept count of 
+                        using the bookRent variable: the book information as well as the return date is 
+                        outputted to the user as well as how the quantity of that book is subtracted*/
                         gameRent++;
                         gameHist++;
                         System.out.printf("\"" + game[pos].getGameName() + "\" (Release Date: " + game[pos].getGameReleaseDate() + ") is now available for pickup in your account ...\n"
                                 + "Rent Date: " + formattedDate2 + " | Return date: " + formattedDate1 + "\n");
-                        System.out.println("You now have " + (gameRentMax+gameReturn-gameHist) + " free game(s) left for this month");
+                        System.out.println("You now have " + (gameRentMax+gameReturn-gameHist) + " free books(s) left for this month");
                         gameRentDetail[gameHist-1] = "[NOTRETURNED] / " + game[pos].getGameID() + " / " +  game[pos].getGameName() + " / Rent Date: " + formattedDate2;    
                         game[pos].setGameQuantity(game[pos].getGameQuantity() - 1);
                     }   
                 }
-                System.out.printf("Would you like to order another game?\n"
+                System.out.printf("Would you like to order another book?\n"
                         + "1. Yes\n"
                         + "2. No\n"
                         + "Your choice: ");
@@ -511,7 +508,7 @@ public class Member extends User {
     public void seeGameRentDetail()
     {
         
-        System.out.println("***   " + getLastName() + "'s Game Rental History   ***");
+        System.out.println("***   " + getLastName() + "'s Book Rental History   ***");
         for (int i = 0; i < gameHist; i++)
         {
             System.out.println(gameRentDetail[i]);
@@ -530,13 +527,13 @@ public class Member extends User {
             seeGameRentDetail();
             if (gameRent == 0)
             {
-                System.out.println("You have no game to return. Exiting to User Menu ...");
+                System.out.println("You have no book to return. Exiting to User Menu ...");
                 
             }
             else
             {
                 
-                System.out.printf("Please insert Game ID of the Game you want to return: ");
+                System.out.printf("Please insert Book ID of the book you want to return: ");
                 int gid = input1.nextInt();
                 
                 for (int i =0; i<gameHist; i++)
@@ -572,9 +569,9 @@ public class Member extends User {
                         {
                             if (buffState.equals("[NOTRETURNED]"))
                             {
-                                /*if the game id is found in the database
-                                the game quantity will be updated and added back to the original list
-                                and the game will be set to returned
+                                /*if the book id is found in the database
+                                the book quantity will be updated and added back to the original list
+                                and the book will be set to returned
                                 */
                                 game[pos].setGameQuantity(game[pos].getGameQuantity() + 1);
                                 gameRentDetail[i] = "[RETURNED] / " + game[pos].getGameID() + " / " +  game[pos].getGameName() + " / Rent Date: " + dt + " / Return Date: " + formattedDate2;
@@ -585,25 +582,25 @@ public class Member extends User {
                             }
                             else 
                             {
-                                System.out.printf("Return Error: This Game has already been returned! \n"); 
-                                /*warning incase user tries to return a game that is already returned*/
+                                System.out.printf("Return Error: This book has already been returned! \n"); 
+                                /*warning incase user tries to return a book that is already returned*/
                             }
                         }    
                         else 
                         {
                             
-                            System.out.println("Return Error: Invalid GameID ... ");
-                            //invalid game id error message
+                            System.out.println("Return Error: Invalid BookID ... ");
+                            //invalid book id error message
                         }
                     }
                     
                 }
 
             }
-            System.out.printf("Do you want to return another game? Yes = 1 No = 2\n"
+            System.out.printf("Do you want to return another book? Yes = 1 No = 2\n"
                     + "Your choice: ");
             choice = input.nextInt();
-        } while (choice == 1); /*do while loop will continue as long as user continues to return games*/
+        } while (choice == 1); /*do while loop will continue as long as user continues to return books*/
             
     }
     public void searchGame(int gid){}
