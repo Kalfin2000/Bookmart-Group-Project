@@ -32,6 +32,14 @@ public class BookMartTeam4 {
                    + "Enter 2 to create a new account.");
            menuChoice = scanner.nextInt();
        }
+       
+       if (menuChoice == 1)
+       {
+           Login login = new Login();
+           login.run();
+       }
+           
+       
     }
     
 }
