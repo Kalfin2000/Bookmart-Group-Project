@@ -1,0 +1,4 @@
+iAmAwsome, abcd, NONE, Minh, Nguyen, H, mnguyen@islander.tamucc.edu, minhha, 12345, 
+minhnguyen, 2345678, NONE, King, Stephen, J, kstephen@gmail.com, iAmKing, 00000, 
+michaelJackson, imnotdead, NONE,  ,  ,  ,  ,  ,  , 
+TAMUCC, oceandrive, NONE,  ,  ,  ,  ,  ,  , 
