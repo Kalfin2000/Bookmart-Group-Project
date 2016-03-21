@@ -1,43 +1,45 @@
-1340, Assassin's Creed Syndicate, 25, Art, 10/23/2015, Ubisoft
-1350, Batman: Arkham Asylum, 12, Mathematics, 08/25/2009, Rocksteady Studios
-1360, Diablo 3, 13, Mathematics, 05/15/2012, Blizzard
-1370, Minecraft: Story Mode, 0, Mathematics, 12/31/2015, Telltale Games
-1380, Armikrog, 13, Law, 09/8/2015, Pencil Test Studios
-1390, Life is Strange, 12, Law, 01/29/2015, Square Enix
-1400, Rise of the Tomb Raider, 21, Law, 02/15/2016, Crystal Dynamics
-1410, King's Quest, 31, Law, 06/28/2015, The Odd Gentlemen
-1420, Starcraft, 21, Law, 07/27/2010, Blizzard
-1430, Total War: Attila, 12, Education, 02/17/2015, Creative Amssembly
-1440, Heroes of the Storm, 21, Education, 06/02/2015, Blizzard
-1450, War of the Overworld, 0, Education, 04/02/2015, Subterranean Games
-1460, Command and Conquer Generals, 12, Education, 02/10/2003, Electronic Arts
-1470, The Witcher 3: Wild Hunt, 28, Art, 05/19/2015, CD Projekt Red
-1480, Fallout 4, 23, Art, 11/10/2015, Bethesda Game Studio
-1490, Bloodborne, 28, Art, 03/24/2015, FromSoftware
-1500, Torment: Tides of Numenera, 12, Art, 12/31/2015, inXile
-1510, Xenoblade Chronicles X, 25, Art, 04/29/2015, Monolith Soft
-1520, Axiom Verge, 14, Design, 03/14/2015, Sony
-1530, Her Story, 10, Design, 06/24/2015, Sam Barlow
-1540, Titan Souls, 20, Design, 04/14/2015, Devolver Digital
-1550, Massive Chalice, 14, Design, 10/21/2014, Double Fine Productions
-1560, You Must Build A Boat, 27, Design, 04/04/2015, EightEight Games LTD
-1570, ArcheAge, 32, Computer Science,  01/15/2013, Trion Worlds
-1580, Skyforge, 30, Computer Science, 06/16/2015, My.com
-1590, World of Warships, 17, Computer Science, 09/17/2015, Wargaming
-1600, Cabal 2, 21, Computer Science, 06/18/2013, EST Gaming
-1610, Marvel Heroes 2015, 34, Computer Science, 06/04/2013, Cryptic Studios
-1620, Fruit Ninja, 14, Business, 04/21/2010, Halfbrick Studios
-1630, 4 Pics 1 Word, 12, Economics, 02/13/2013, RedSpell
-1640, Goat Simulator, 29, Economics, 04/01/2014, Coffee Stain Studios
-1650, Angry Birds, 0, Business, 06/15/2010, Rovio
-1660, Candy Crush, 20, Music, 09/03/2011, King
-1670, Flight Simulator X, 13, Music, 08/02/2006, Microsoft Studios
-1680, Silent Hunter, 31, Business, 02/29/1996, Strategic Simulations
-1690, DCS World, 23, Philosophy, 09/17/2008, Eagle Dynmaics
-1700, Assetto, 12, Psychology, 12/19/2014, Kunos Simulazioni
-1710, Falcon 4.0, 0, Economics, 12/31/2003, MicroProse
-1720, Forza Motorsport 6, 27, Economics, 09/15/2015, Turn 10 Studios
-1730, Need for Speed, 22, Economics, 11/3/2015, Ghost Games
-1740, FIFA 16, 16, Business, 09/22/2015, EA
-1750, NBA 2K16, 35, Business, 09/29/2015, 2K Sports
-1760, Madden NFL 16, 34, Business, 08/25/2015, EA
+0001, A World of Arts, 5, Art, 2009, Prentice Hall 
+0002, Art: A Brief History, 5, Art, 2009, Prentice Hall
+0003, Introduction to Nineteenth Century Art, 4, Art, 2011, Routledge 
+0004, History of Japanese Art, 3, Art, 2004, Prentice Hall 
+0005, Dynamics of Fashion 4th Ed, 3, Art, 2012, Fairchild Books 
+1001, Marketing Management / Edition 11, 5, Business & Economics, 2012, McGrw-Hill Education
+1002, Leadership: Theory and Practice / Edition 7, 5, Business & Economics, 2015, SAGE Publications
+1003, Communicating at Work: Principles for Business and the Professions, 5, Business & Economics, 2012, McGraw-Hill Education
+1004, Getting the Right Things Done - A leader's guide to planning and execution, 5, Business & Economics, 2006, Lean Enterprise Institute
+1005, The Big Short: Inside the Doomsda Machine, 5, Business & Economics, 2011, Norton
+2001, Effective Java(Java Series) / Edition 2, 5, Computer Science, 2008, Addison-Wesley 
+2002, Hacking: The Art of Exploration / Edition 2, 5, Computer Science, 2008, No Starch Press 
+2003, The Art of Watching Films / Edition 8, 5, Computer Science, 2011, McGraw-Hill Higher Education 
+2004, Programmable Logic Controllers / Edition 4, 5, Computer Science, 2010, McGraw-Hill Higher Education 
+2005, Introduction to Computer Security, 5, Computer Science, 2010, Pearson 
+3001, Organization Theory and Design, 5, Design, 2012, Cengage Learning 
+3002, Systems Analysis and Design, 5, Design, 2013, Cengage Learning 
+3003, Fundementals of Digital Logic with Verilog Design, 5, Design, 2013, McGraw-Hill Science/Engineering/Math 
+3004, How to Design and Evaluate Research in Education, 5, Design, 2014, McGraw-Hill Companies 
+3005, Research In Psychology: Methods and Design, 5, Design, 2012, Wiley 
+4001, Applied Behavior Analysis for Teachers / Ediction 9, 5, Education, 2012, Pearson 
+4002, Pedagogy of the Oppressed / Ediction 30, 5, Education, 2000, Bloomsbury Acaemic
+4003, Teaching with Poverty in Mind, 5, Education, 2009, Association for Supervision & Curriculum Development
+4004, Building Classroom Discipline / Edition 11, 5, Education, 2013, Pearson
+4005, Side by Side(Side Series #1) / Edition 3, 5, Education, 2000, Pearson Education ESL
+5001, Business Law: Text and Cases, 5, Law, 2014, Cengage Learninng
+5002, Criminal Law, 5, Law, 2013, Cengage Learning
+5003, Law for Business, 5, Law, 2014, McGraw-Hill Higher Education
+5004, Business Law (8th Edition), 5, Law, 2012, Prentice Hall
+5005, Simulation Modeling and Analysis, 5, Law, 2014, McGraw-Hill Higher Education
+6001, Discrete Mathematics and Its Applications, 5, Mathematics, 2011, McGraw-Hill Science/Engineering/Math
+6002, Advanced Engineering Mathematics, 5, Mathematics, 2011, Wiley
+6003, My Math Lab Student Access Kit, 5, Mathematics, 2003, Prentice Hall
+6004, Ecvursions in Modern Mathematics (8th Edition), 5, Mathematics, 2012, Pearson
+6005, A Survey of Mathematics with Applications (9th Edition), 5, Mathematics, 2012, Pearson
+7001, Music: An Appreciation, Brief Edition, 5, Music, 2014, McGraw-Hill Humanities/Social Sciences/Languages
+7002, Music: An Appreciation, 5, Music, 2014, McGraw-Hill Humanities/Social Sciences/Languages
+7003, Rock Music Styles: A History, 5, Music, 2010, McGraw-Hill College
+7004, American Popular Music, 5, Music, 2013, Oxford University Press
+7005, Music for Sight Singing, 5, Music, 2012, Cengage Learning
+8001, The Elements of Moral Philosophy, 5, Philosophy and Psychology, 2011, McGraw-Hill Humanities/Social Sciences/Languages
+8002, Problems from Philosophy, 5, Philosophy and Psychology, 2011, McGraw-Hill Humanities/Social Sciences/Languages
+8003, Voices of Wisdom: A Multicultural Philosophy Reader, 5, Philosophy and Psychology, 2012, Cengage Learning
+8004, Philosophy: The Quest For Truth, 5, Philosophy and Psychology, 2013, Oxford University Press
+8005, Fifty Readings in Philosophy, 5, Philosophy and Psychology, 2011, McGraw-Hill Humanities/Social Sciences/Languages
