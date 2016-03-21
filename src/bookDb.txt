@@ -1,27 +1,46 @@
-Art, Business & Economics, Computer Science, Design, Education, Law, Mathematics, Music, Philosophy and Psychology
-BookID , BookName, BookQuantity, BookCategory, BookReleaseDate, BookPublisher
-0001, , 5, Art, , 
-0002, , 5, Art, , 
-0003, , 4, Art, , 
-0004, , 3, Art, , 
-0005, , 3, Art, , 
-1001, , 5, Business & Economics, ,
-1002, , 5, Business & Economics, ,
-1003, , 5, Business & Economics, ,
-1004, , 5, Business & Economics, ,
-1005, , 5, Business & Economics, ,
-2001, , 5, Computer Science, , 
-2002, , 5, Computer Science, , 
-2003, , 5, Computer Science, , 
-2004, , 5, Computer Science, , 
-2005, , 5, Computer Science, , 
-3001, , 5, Design, , 
-3002, , 5, Design, , 
-3003, , 5, Design, , 
-3004, , 5, Design, , 
-3005, , 5, Design, , 
-4001, , 5, Education, , 
-4001, , 5, Education, , 
-4001, , 5, Education, , 
-4001, , 5, Education, , 
-4001, , 5, Education, , 
+BookID, BookName, BookQuantity, BookCategory, BookReleaseDate, BookPublisher
+0001, A World of Arts, 5, Art, 2009, Prentice Hall 
+0002, Art: A Brief History, 5, Art, 2009, Prentice Hall
+0003, Introduction to Nineteenth Century Art, 4, Art, 2011, Routledge 
+0004, History of Japanese Art, 3, Art, 2004, Prentice Hall 
+0005, Dynamics of Fashion 4th Ed, 3, Art, 2012, Fairchild Books 
+1001, Marketing Management / Edition 11, 5, Business & Economics, 2012, McGrw-Hill Education
+1002, Leadership: Theory and Practice / Edition 7, 5, Business & Economics, 2015, SAGE Publications
+1003, Communicating at Work: Principles for Business and the Professions, 5, Business & Economics, 2012, McGraw-Hill Education
+1004, Getting the Right Things Done - A leader's guide to planning and execution, 5, Business & Economics, 2006, Lean Enterprise Institute
+1005, The Big Short: Inside the Doomsda Machine, 5, Business & Economics, 2011, Norton
+2001, Effective Java(Java Series) / Edition 2, 5, Computer Science, 2008, Addison-Wesley 
+2002, Hacking: The Art of Exploration / Edition 2, 5, Computer Science, 2008, No Starch Press 
+2003, The Art of Watching Films / Edition 8, 5, Computer Science, 2011, McGraw-Hill Higher Education 
+2004, Programmable Logic Controllers / Edition 4, 5, Computer Science, 2010, McGraw-Hill Higher Education 
+2005, Introduction to Computer Security, 5, Computer Science, 2010, Pearson 
+3001, Organization Theory and Design, 5, Design, 2012, Cengage Learning 
+3002, Systems Analysis and Design, 5, Design, 2013, Cengage Learning 
+3003, Fundementals of Digital Logic with Verilog Design, 5, Design, 2013, McGraw-Hill Science/Engineering/Math 
+3004, How to Design and Evaluate Research in Education, 5, Design, 2014, McGraw-Hill Companies 
+3005, Research In Psychology: Methods and Design, 5, Design, 2012, Wiley 
+4001, Applied Behavior Analysis for Teachers / Ediction 9, 5, Education, 2012, Pearson 
+4002, Pedagogy of the Oppressed / Ediction 30, 5, Education, 2000, Bloomsbury Acaemic
+4003, Teaching with Poverty in Mind, 5, Education, 2009, Association for Supervision & Curriculum Development
+4004, Building Classroom Discipline / Edition 11, 5, Education, 2013, Pearson
+4005, Side by Side(Side Series #1) / Edition 3, 5, Education, 2000, Pearson Education ESL
+5001, Business Law: Text and Cases, 5, Law, 2014, Cengage Learninng
+5002, Criminal Law, 5, Law, 2013, Cengage Learning
+5003, Law for Business, 5, Law, 2014, McGraw-Hill Higher Education
+5004, Business Law (8th Edition), 5, Law, 2012, Prentice Hall
+5005, Simulation Modeling and Analysis, 5, Law, 2014, McGraw-Hill Higher Education
+6001, Discrete Mathematics and Its Applications, 5, Mathematics, 2011, McGraw-Hill Science/Engineering/Math
+6002, Advanced Engineering Mathematics, 5, Mathematics, 2011, Wiley
+6003, My Math Lab Student Access Kit, 5, Mathematics, 2003, Prentice Hall
+6004, Ecvursions in Modern Mathematics (8th Edition), 5, Mathematics, 2012, Pearson
+6005, A Survey of Mathematics with Applications (9th Edition), 5, Mathematics, 2012, Pearson
+7001, Music: An Appreciation, Brief Edition, 5, Music, 2014, McGraw-Hill Humanities/Social Sciences/Languages
+7002, Music: An Appreciation, 5, Music, 2014, McGraw-Hill Humanities/Social Sciences/Languages
+7003, Rock Music Styles: A History, 5, Music, 2010, McGraw-Hill College
+7004, American Popular Music, 5, Music, 2013, Oxford University Press
+7005, Music for Sight Singing, 5, Music, 2012, Cengage Learning
+8001, The Elements of Moral Philosophy, 5, Philosophy and Psychology, 2011, McGraw-Hill Humanities/Social Sciences/Languages
+8002, Problems from Philosophy, 5, Philosophy and Psychology, 2011, McGraw-Hill Humanities/Social Sciences/Languages
+8003, Voices of Wisdom: A Multicultural Philosophy Reader, 5, Philosophy and Psychology, 2012, Cengage Learning
+8004, Philosophy: The Quest For Truth, 5, Philosophy and Psychology, 2013, Oxford University Press
+8005, Fifty Readings in Philosophy, 5, Philosophy and Psychology, 2011, McGraw-Hill Humanities/Social Sciences/Languages
