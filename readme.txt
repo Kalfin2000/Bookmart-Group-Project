@@ -1,4 +1,4 @@
-Name:    	Christian
+Name:    	Steven Benedict, Raymundo Cantu, Aime Habihirwe
 Project #1: 	BookMart
 Class:   	COSC 3324-001
 Date Submitted: 3/20/2016
