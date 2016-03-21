@@ -1,0 +1,4 @@
+Tester, abcd, NONE, John, Snow, H, johnsnow@islander.tamucc.edu, tester, 12345, 
+snow, 2345678, NONE, Dog, gamer, K, Kingdomcome@gmail.com, iameverything, 00000, 
+ericcartman, willneverdie, NONE,  ,  ,  ,  ,  ,  , 
+TAMUCC, oceandrive, NONE,  ,  ,  ,  ,  ,  , 
