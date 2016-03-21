@@ -1,4 +1,3 @@
-BookID, BookName, BookQuantity, BookCategory, BookReleaseDate, BookPublisher
 0001, A World of Arts, 5, Art, 2009, Prentice Hall 
 0002, Art: A Brief History, 5, Art, 2009, Prentice Hall
 0003, Introduction to Nineteenth Century Art, 4, Art, 2011, Routledge 
